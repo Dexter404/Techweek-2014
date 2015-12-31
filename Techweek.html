@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Techweek' 14</title>
+<link rel="shortcut icon" href="techweek.png" type="image/png">
+
+<!--- CSS Libraries --->
+<!-- for background divisions -->
+<link type="text/css" rel="stylesheet" href="bg_div.css" />
+<!-- for left side tabs -->
+<link type="text/css" rel="stylesheet" href="tab.css" />
+<!-- for title(Teckweek'14) -->
+<link type="text/css" rel="stylesheet" href="title.css" />
+<!-- for displaying schedule -->
+<link type="text/css" rel="stylesheet" href="schedule.css" />
+<!-- for ieee dtu logo -->
+<link type="text/css" rel="stylesheet" href="logo.css" />
+<!-- for footer(contacts & sponsors) -->
+<link type="text/css" rel="stylesheet" href="footer.css" />
+<!-- for slider -->
+<link href="slider.css" type="text/css" rel="stylesheet" />
+
+<style>
+.slider img
+{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:680px; 
+	height:280px;
+}
+
+.workshop_material
+{
+	position:relative;
+	left:400px;
+}
+</style>
+<!-------------------->
+
+<!--- CSS & jQuery Libraries for slider effect & content viewer ---> 
+<!-- jQuery library -->
+<script type="text/javascript" src="fancyBox/lib/jquery-1.10.1.min.js"></script>
+
+<!-- fancyBox -->
+<link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() 
+	{
+		$(".fancybox").fancybox();
+	});
+</script>
+<!-------------------->
+
+<!--- for Schedule Marquee delaying --->
+<script type="text/javascript">
+function delay()
+{
+	document.getElementById('move').setAttribute('scrollamount',0,0);
+	setTimeout(function(){document.getElementById('move').setAttribute('scrollamount',6,0);},4.5*1000);
+}
+</script>
+<!-------------------->
+
+</head>
+
+<body onload="delay()">
+
+<!--- Left Side Tabs (in tab.html) --->
+<div id="left_side_tab">
+    <div id="ieee_tab"><a class="site_links" href="http://www.ieee.org" target="_blank">IEEE</a></div>
+    <div id="dtu_tab"><a class="site_links" href="http://www.dce.edu" target="_blank">DTU</a></div>
+    <div id="ieee_dtu_tab"><a class="site_links" href="http://www.facebook.com/ieeedtu" target="_blank">IEEE DTU</a></div>
+</div>
+<!---------->
+
+
+<!--- Basic Background Layer (in bg_div.html) --->
+<div id="base_div">
+    <div id="header_div">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3">
+        	<!--a class="fancybox" rel="group" data-fancybox-type="iframe" id="about_us" href="workshops/about_ieee_dtu.html">
+            	<div id="circle"><img src="ieee_dtu.png" alt="IEEE DTU" /></div>
+            </a-->
+        </div>
+    </div>
+    
+    <div id="main_div"></div>
+    
+    <!--- Lower Layer for Shadow Effect --->
+	<div id="side_lower_tab1" class="side_tab_style">FEEDBACK</div>
+    <div id="side_lower_tab2" class="side_tab_style">WEB TEAM</div>
+    <!------>
+    
+    <div id="side_div">
+    	<a href="feedback.html" style="text-decoration:none" target="_blank">
+        	<div id="side_upper_tab1" class="side_tab_style">FEEDBACK</div>
+        </a>
+        <a href="workshops/web_team.html" class="fancybox" rel="group4" data-fancybox-type="iframe">
+        	<div id="side_upper_tab2" class="side_tab_style">WEB TEAM</div>
+        </a>
+	</div>
+    
+    <div id="footer_div">
+    	<a class="fancybox" data-fancybox-type="iframe" href="workshops/contacts.html" id="contact">CONTACT US</a> 
+    	<!--a class="fancybox" data-fancybox-type="iframe" href="http://www.dtuieee.wordpress.com" id="sponsor"></a-->
+        <a href="http://www.dtuieee.wordpress.com" id="blog" target="_blank"><img src="blog.png" /></a>
+        <a href="webd_workshop.rar" class="workshop_material">Click here to download WebD workshop material!</a>
+    </div>
+</div>
+<!---------->
+
+
+<!--- Schedule Marquee --->
+<div id="schedule">
+    <center>
+    	<a class="fancybox link_style" rel="group3" data-fancybox-type="iframe" href="workshops/schedule.html">Schedule</a>
+    </center>
+    <div id="line1"></div>
+        <marquee id="move" direction="up" behavior="scroll" 
+         		 onmouseover="this.setAttribute('scrollamount',0,0);" onmouseout="this.setAttribute('scrollamount',6,0);">
+        <table align="center">
+        	<!-- Day 1 -->
+            <tr><th colspan="2">21st Aug,</th></tr>
+        	<tr><td>4:00 pm :</td> 
+                <td>
+                	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/about_techweek.html">
+                    	Inauguration</a>
+                </td>
+            </tr>
+            <!----->
+            
+            <!-- Day 2 -->
+            <tr><th colspan="2">22nd Aug,</th></tr>
+        	<tr><td>4:30 pm :</td> 
+            	<td>
+                	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/dip.html">
+                    	MATLAB</a>
+                </td>
+            </tr>
+            <tr><td>5:00 pm :</td> 
+                 <td>
+                 	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/designing.html">
+                    	Graphic Designing</a>
+                 </td>
+            </tr>
+            <!----->
+            
+            <!-- Day 3 -->
+            <tr><th colspan="2">23rd Aug,</th></tr>
+            <tr><td>10:00 am :</td> 
+            	<td>
+                	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/programming.html">
+                    	Programming</a>
+                </td>
+            </tr>
+            <tr><td>2:00 pm :</td> 
+            	 <td>
+                	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/robotics.html">
+                    	Robotics</a>
+                </td>
+            </tr>
+            <!----->
+            
+            <!-- Day 4 -->
+            <tr><th colspan="2">25th Aug,</th></tr>
+        	<tr><td>4:30 pm :</td> 
+                <td>
+                	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/solid_works.html">
+                    	Solid Works</a>
+                </td>
+            </tr>
+            <tr><td>5:00 pm :</td> 
+            	 <td>
+                 	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/webd.html">
+                    	Web Development</a>
+                 </td>
+            </tr>
+            <!----->
+            
+            <!-- Day 5 -->
+            <tr><th colspan="2">26th Aug,</th></tr>
+        	<tr><td>4:30 pm :</td> 
+                <td>
+                	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/animation.html">
+                    	Animation</a>
+                </td>
+            </tr>
+            <!----->
+            
+            <!-- Day 6 -->
+            <tr><th colspan="2">27th Aug,</th></tr>
+        	<tr><td>4:30 pm :</td> 
+                <td>
+                	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/soft_dev.html">
+                    	Software Development</a>
+                </td>
+            </tr>
+            <tr><td>5:00 pm :</td> 
+            	 <td>
+                 	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/wattack.html">
+                    	Wattack</a>
+                 </td>
+            </tr>
+            <tr><td>6:30 pm :</td> 
+            	 <td>
+                 	<a class="fancybox" rel="group3" data-fancybox-type="iframe" href="workshops/about_ieee_dtu.html">
+                    	Valediction</a>
+                 </td>
+            </tr>
+            <!----->
+        </table>
+        </marquee>
+    <div id="line2"></div>
+</div>
+<!---------->
+
+
+<!--- Workshop Slider --->
+<div class="slider">
+<ul>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/programming.html">
+        	<img src="slides/programming.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/programming.html">Programming</a>
+        </div>
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/robotics.html">
+        	<img src="slides/robotics.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/robotics.html">Robotics</a>
+        </div>
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/soft_dev.html">
+        	<img src="slides/soft_dev.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/soft_dev.html">Software Development</a>
+        </div>
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/webd.html">
+        	<img src="slides/webd.jpeg" /></a>
+		<div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/webd.html">Web D</a>
+        </div>    
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/animation.html">
+        	<img src="slides/animation.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/animation.html">Animation</a>
+        </div>
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/solid_works.html">
+        	<img src="slides/solid_works.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/solid_works.html">SolidWorks</a>
+        </div>
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/wattack.html">
+        	<img src="slides/wattack.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/wattack.html">Wattack</a>
+        </div>
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/designing.html">
+        	<img src="slides/designing.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/designing.html">Designing</a>
+        </div>
+    </li>
+    <li>
+        <a class="fancybox" rel="group1" data-fancybox-type="iframe" href="workshops/dip.html">
+        	<img src="slides/dip.jpeg" /></a>
+        <div class="image_title">
+        	<a class="fancybox" rel="group2" data-fancybox-type="iframe" href="workshops/dip.html">MATLAB</a>
+        </div>
+    </li>
+</ul>
+</div>
+<!---------->
+
+
+<!--- Title & its effect: Techweek'14 (in title.html) ---> 
+<div id="title" class="title_animation">
+	<a class="fancybox site_links" title="About Techweek" rel="group4" 
+       data-fancybox-type="iframe" href="workshops/about_techweek.html">
+        <span id="title_style1" class="title_animation">Techweek</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="title_style2" class="title_animation">20</span>
+        <span id="title_style3" class="title_animation">14</span>
+    </a>
+</div>
+
+<div id="circle">
+	<a class="fancybox site_links" title="About IEEE DTU" rel="group4" 
+       data-fancybox-type="iframe" href="workshops/about_ieee_dtu.html">
+		<img src="ieee_dtu.png" alt="IEEE DTU" />
+	</a>
+</div>
+<!---------->
+</body>
+
+</html>

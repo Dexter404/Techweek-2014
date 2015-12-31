@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contact
+{
+	position:relative;
+	top:0px;
+	left:135px;
+	color:#444;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#contact:hover
+{
+	color:#003;
+}
+
+#sponsor
+{
+	position:relative;
+	top:25px;
+	left:850px;
+	color:#444;
+	text-decoration:none;
+}
+
+#sponsor:hover
+{
+	color:#003;
+}
+
+#blog
+{
+	position:relative;
+	top:8px;
+	left:850px;
+}
+
+#blog img
+{
+	height:40px;
+	width:40px;
+}

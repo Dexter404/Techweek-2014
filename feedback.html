@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+<link rel="shortcut icon" href="techweek.png" type="image/png">
+
+<!--- CSS Library of Feedback Form --->
+<link rel="stylesheet" type="text/css" href="form.css">
+<!---------->
+
+<!--- Ajax code for validation --->
+<script language="javascript" type="text/javascript" src="validation.js"></script>
+<!---------->
+</head>
+
+<body>
+
+<!--- Header Section --->
+<div id="header">
+    <div id="logo"><h1 class="header1">TECHWEEK 2014</h1></div>
+    <div id="headline">Techweek > Feedback</div>
+</div>
+<!---------->
+
+<!--- Form Container Section --->
+<div id="form_container">
+	<h1>Techweek Feedback</h1>
+	<br />
+    <p>
+     Thank you for taking the time to fill in our online feedback form. By providing us your feedback, you are helping us 
+     understand what we do well and what improvements we need to implement.
+    </p>
+    <br />
+    <form name="techweek_form" method="POST" action="form.php">
+    	
+        <!--- Personal Info --->
+        <b style="font-variant:small-caps;"><table>
+            <tr>
+                <td class="td1" >Name* :</td> 
+                <td class="td2"><input type="text" onfocusout="isValid(this)" name="name" required  /></td>
+				<td class="td5"><div id ="name1"></div></td>
+             
+                <td class="td1">Branch* :</td> 
+                <td class="td2"><input type="text" onfocusout="isValid(this)" name="branch" required /></td>
+				<td class="td5"><div id ="branch1"></div></td>
+             </tr>
+             <tr>
+                <td class="td1">College* :</td> 
+                <td class="td2"><input type="text" onfocusout="isValid(this)" name="college" required /></td>
+				<td class="td5"><div id ="college1"></div></td>
+                    
+                <td class="td1">Year* :</td>
+                <td class="td2">
+                	<select name="year"  onfocusout="isValid(this)" required>
+                        <option value="error">------------ Select -------------</option>
+                        <option value="1">First</option>
+                        <option value="2">Second</option>
+                        <option value="3">Third</option>
+                        <option value="4">Fourth</option>
+                    </select>
+                </td>
+				<td class="td5"><div id ="year1"></div></td>
+            </tr>
+            <tr>
+                <td class="td1">Contact :</td> 
+                <td class="td2"><input type="text" onfocusout="isValid(this)" name="contact" size="23"/></td>
+				<td class="td5"><div id ="contact1"></div></td>
+               
+                <td class="td1">Email ID* :</td> 
+                <td class="td2"><input type="email" onfocusout="isValid(this)" name="email" required /></td>
+				<td class="td5"><div id ="email1"></div></td>
+            </tr>
+        </table></b><br /><br /><br />
+		<!--------------->
+    
+    	<!--- Question Section --->
+		<div class="questions">
+		
+        	<!--- Ques 1: --->
+            Which workshops have you attended?<br><br>
+            <table>
+                <tr> 
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="dip" /></td>
+                    <td class="td3">MATLAB</td>
+					<td class="td6"><div id ="dip1"></div></td>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="design" /></td>
+                    <td class="td3">Graphic Designing</td>
+					<td class="td6"><div id ="design1"></div></td>
+                <tr>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="program" /></td>
+                    <td class="td3">Programming</td>
+					<td class="td6"><div id ="program1"></div></td>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="robotics"/></td>
+                    <td class="td3">Robotics</td>
+					<td class="td6"><div id ="robotics1"></div></td>
+                </tr>
+                <tr>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="solid" /></td>
+                    <td class="td3">SolidWorks</td>
+					<td class="td6"><div id ="solid1"></div></td>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="webd" /></td>
+                    <td class="td3">Web Development</td>
+					<td class="td6"><div id ="webd1"></div></td>
+                </tr>
+                <tr>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="animation" /></td>
+                    <td class="td3">Animation</td>
+					<td class="td6"><div id ="animation1"></div></td>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="oss" /></td>
+                    <td class="td3">Software Development</td>
+					<td class="td6"><div id ="oss1"></div></td>
+                </tr>
+                <tr>
+                    <td class="td4"><input type="checkbox" onchange="isValid(this)" name="wattack" /></td>
+                    <td class="td3">Wattack </td>
+					<td class="td6"><div id ="wattack1"></div></td>
+                    <td class="td4"></td>
+                    <td class="td3"></td>
+					<td class="td6"></td>
+                </tr>
+            </table><br /><br />
+        	
+    		<!--- Ques 2: --->
+            How will you rate the workshops you attended?*</br></br>
+            <table height="auto" width="716px">
+                <tr align="center">
+                    <td>Very satisfied</td>
+                    <td>Moderately satisfied</td>
+                    <td>Somewhat satisfied</td>
+                    <td>So Neutral</td> 
+                    <td>Very dissatisfied</td>
+                </tr>
+            </table>
+                <div class="button_connector"></div>
+            <table height="auto" width="806px">
+                <tr align="center">
+                    <td><input type="radio" name="response1" value="5" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response1" value="4" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response1" value="3" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response1" value="2" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response1" value="1" class="sat_button" onchange="isValid(this)"></td>
+					<td class="td6"><div id ="response11"></div></td>
+                </tr>
+            </table><br /><br />
+        
+        	<!--- Ques 3: --->
+            Were you satisfied with the course content of the workshops?*</br></br>
+            <table height="auto" width="716px">
+                <tr align="center">
+                    <td>Very satisfied</td>
+                    <td>Moderately satisfied</td>
+                    <td>Somewhat satisfied</td>
+                    <td>So Neutral</td> 
+                    <td>Very dissatisfied</td>
+                </tr>
+            </table>
+                <div class="button_connector"></div>
+            <table height="auto" width="806px">
+                <tr align="center">
+                    <td><input type="radio" name="response2" value="5" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response2" value="4" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response2" value="3" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response2" value="2" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response2" value="1" class="sat_button" onchange="isValid(this)"></td>
+					<td class="td6"><div id ="response21"></div></td>
+                </tr>
+            </table><br /><br />
+
+            <!--- Ques 4: --->
+			Were you satisfied by the way of teaching in the workshops?*</br></br>
+            <table height="auto" width="716px">
+                <tr align="center">
+                    <td>Very satisfied</td>
+                    <td>Moderately satisfied</td>
+                    <td>Somewhat satisfied</td>
+                    <td>So Neutral</td> 
+                    <td>Very dissatisfied</td>
+                </tr>
+            </table>
+                <div class="button_connector"></div>
+            <table height="auto" width="806px">
+                <tr align="center">
+                    <td><input type="radio" name="response3" value="5" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response3" value="4" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response3" value="3" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response3" value="2" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response3" value="1" class="sat_button" onchange="isValid(this)"></td>
+					<td class="td6"><div id ="response31"></div></td>
+                </tr>
+            </table><br /><br />
+            
+            <!--- Ques 4: ---
+			How will you rate the people taking the workshop?*</br></br>
+            <table height="auto" width="716px">
+                <tr align="center">
+                    <td>Very satisfied</td>
+                    <td>Moderately satisfied</td>
+                    <td>Somewhat satisfied</td>
+                    <td>So Neutral</td> 
+                    <td>Very dissatisfied</td>
+                </tr>
+            </table>
+                <div class="button_connector"></div>
+            <table height="auto" width="716px">
+                <tr align="center">
+                    <td><input type="radio" name="response3" value="5" class="sat_button"></td>
+                    <td><input type="radio" name="response3" value="4" class="sat_button"></td>
+                    <td><input type="radio" name="response3" value="3" class="sat_button"></td>
+                    <td><input type="radio" name="response3" value="2" class="sat_button"></td>
+                    <td><input type="radio" name="response3" value="1" class="sat_button"></td>
+                </tr>
+            </table><br /><br />
+			--->
+			
+            <!--- Ques 5: --->
+            How would you describe your level of satisfaction (or dissatisfaction) of our website?*</br></br>
+            <table height="auto" width="716px">
+                <tr align="center">
+                    <td>Very satisfied</td>
+                    <td>Moderately satisfied</td>
+                    <td>Somewhat satisfied</td>
+                    <td>So Neutral</td> 
+                    <td>Very dissatisfied</td>
+                </tr>
+            </table>
+                <div class="button_connector"></div>
+            <table height="auto" width="806px">
+                <tr align="center">
+                    <td><input type="radio" name="response4" value="5" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response4" value="4" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response4" value="3" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response4" value="2" class="sat_button" onchange="isValid(this)"></td>
+                    <td><input type="radio" name="response4" value="1" class="sat_button" onchange="isValid(this)"></td>
+					<td class="td6"><div id ="response41"></div></td>
+                </tr>
+            </table><br /><br />
+
+			<!--- Ques 6: --->
+        	Would you like to join IEEE?* <br /><br />
+			<table width="230px">
+			<tr>
+                <td>
+                    <input type="radio" name="likeness" value="yes" onchange="isValid(this)"> Yes <br />
+                    <input type="radio" name="likeness" value="no" onchange="isValid(this)"> No <br />
+                    <input type="radio" name="likeness" value="maybe" onchange="isValid(this)"> Can't Say 
+                </td>
+                <td class="td6"><div id ="likeness1"></div></td>
+			</tr>
+			</table>
+			<br /> <br />
+            
+            <!--- Ques 7: --->
+			Any suggestions for changes in any workshop, or any idea for new workshops that we can include? <br /><br />
+            <textarea name="suggest" rows="10" cols="50"></textarea>
+
+		</div>
+        <!--------------->
+   
+		<br /><br /><br />
+        
+	    <center><input type="submit" value="submit" id="submit"/></center>
+
+		<br />*Required Fields
+    </form>
+</div>
+<!--------------->
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+* 
+{
+	margin: 0; 
+	padding: 0;
+}
+
+body 
+{
+	background: #ccc; 
+	font-family: arial, verdana, tahoma;
+}
+*/
+
+/*Time to apply widths for accordian to work
+Width of image = 436px
+Height of image = 280px
+total images = 8
+so width of hovered image = 430px
+width of un-hovered image = 30px - you can set this to anything
+so total container width = 430 + 210(30*7) = 640px;
+default width = 640/8 = 80px;
+*/
+
+.slider 
+{
+	position:absolute;
+	top:125px;
+	left:515px;
+	padding:0;
+	background: #ccc; 
+	font-family: arial, verdana, tahoma;
+	width: 673px; 
+	height: 280px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 50px auto;
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); /* Chrome, Safari */
+	   -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); /* Firefox */
+	   	 -o-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); /* Opera */
+	 	    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); /* Standard syntax */ 
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.slider ul 
+{
+	padding:0;
+	margin:0;
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.slider li 
+{
+	position: relative;
+	margin:0;
+	display: block;
+	width: 74px;
+	float: left;
+	border-left: 1px solid #888;
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5); /* Chrome, Safari */
+	   -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5); /* Firefox */
+	   	 -o-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5); /* Opera */
+	 	    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5); /* Standard syntax */ 
+		
+	/*Transitions to give animation effect*/
+	-webkit-transition: all 0.5s; /* Chrome, Safari */
+	   -moz-transition: all 0.5s; /* Firefox */
+		 -o-transition: all 0.5s; /* Opera */	   
+			transition: all 0.5s; /* Standard syntax */	   
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce width of un-hovered elements*/
+.slider ul:hover li { width: 30px; }
+/*Apply hover effects*/
+/*The LI hover style should override the UL hover style*/
+.slider ul li:hover { width: 430px; }
+
+
+.slider li img 
+{
+	display: block;
+	width:430px;
+	height:280px;
+}
+
+/*Image title styles*/
+.image_title 
+{
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; 
+	bottom: 0;	
+	width: 430px;	
+}
+
+.image_title a 
+{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+}

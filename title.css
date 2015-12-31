@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body
+{
+	margin:0;
+}
+*/
+
+#title
+{
+	position:absolute;
+	top:170px;
+	left:510px;
+	height:280px;
+	width:684px;
+	padding-top:10px;
+	background-color:rgba(0,0,0,0.7);
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	-webkit-border-radius:7px; /* Chrome, Safari */
+	   -moz-border-radius:7px; /* Firefox */
+		 -o-border-radius:7px; /* Opera */
+			border-radius:7px; /* Standard syntax */
+	
+	/* Chrome, Safari, Opera */
+    -webkit-animation-name: title_div_shift;
+	/* Firefox */
+       -moz-animation-name: title_div_shift;
+    /* Standard syntax */
+    		animation-name: title_div_shift;
+}
+
+	
+/***** Animation Effects *****/
+.title_animation
+{
+	/* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 5s;
+	-webkit-animation-fill-mode:forwards;
+
+	/* Firefox */
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 5s;
+	-moz-animation-fill-mode:forwards;
+
+    /* Standard syntax */
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+	animation-fill-mode:forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes title_div_shift
+{
+	from
+	{
+		top:170px;
+		left:510px;
+		height:280px;
+		width:684px;
+		background-color:rgba(0,0,0,0.7);
+	}
+	
+	to
+	{
+		background-color:transparent;
+		top:95px;
+		left:130px;
+		height:60px;
+		width:375px;
+	}
+}
+
+/* Firefox */
+@-moz-keyframes title_div_shift
+{
+	from
+	{
+		top:170px;
+		left:510px;
+		height:280px;
+		width:684px;
+		background-color:rgba(0,0,0,0.7);
+	}
+	
+	to
+	{
+		background-color:transparent;
+		top:95px;
+		left:130px;
+		height:60px;
+		width:375px;
+	}
+}
+
+/* Standard syntax */
+@keyframes title_div_shift
+{
+	from
+	{
+		top:170px;
+		left:510px;
+		height:280px;
+		width:684px;
+		background-color:rgba(0,0,0,0.7);
+	}
+	
+	to
+	{
+		background-color:transparent;
+		top:95px;
+		left:130px;
+		height:60px;
+		width:375px;
+	}
+}
+
+
+/*** Text Effects ***/
+
+#title_style1
+{
+	color:#ffb812;
+	font-size:75px;
+	text-shadow:1px 2px 30px #954522;
+	
+	/* Chrome, Safari, Opera */
+    -webkit-animation-name: title_shift1;
+	/* Firefox */
+       -moz-animation-name: title_shift1;
+    /* Standard syntax */
+    		animation-name: title_shift1;
+}
+
+#title_style2
+{
+	color:#dc0c00;
+	font-size:55px;
+	text-shadow:1px 2px 20px #b80a09;
+
+	/* Chrome, Safari, Opera */
+    -webkit-animation-name: title_shift2;
+	/* Firefox */
+       -moz-animation-name: title_shift2;
+    /* Standard syntax */
+    		animation-name: title_shift2;
+}
+
+#title_style3
+{
+	color:#dc0c00;
+	font-size:75px;
+	text-shadow:1px 2px 20px #b80a09;
+
+	/* Chrome, Safari, Opera */
+    -webkit-animation-name: title_shift3;
+	/* Firefox */
+       -moz-animation-name: title_shift3;
+    /* Standard syntax */
+    		animation-name: title_shift3;
+}
+
+/*--- Style:1 ---*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes title_shift1
+{
+	from 
+	{ 
+		color:#ffb812;
+		font-size:75px;
+		text-shadow:1px 2px 30px #954522;
+	}
+	to 	 
+	{ 
+		color:#0a061d; 
+		font-size:45px;
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/* Firefox */
+@-moz-keyframes title_shift1
+{
+	from 
+	{ 
+		color:#ffb812;
+		font-size:75px;
+		text-shadow:1px 2px 30px #954522;
+	}
+	to 	 
+	{ 
+		color:#0a061d; 
+		font-size:45px;
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/* Standard syntax */
+@keyframes title_shift1
+{
+	from 
+	{ 
+		color:#ffb812;
+		font-size:75px;
+		text-shadow:1px 2px 30px #954522;
+	}
+	to 	 
+	{ 
+		color:#0a061d; 
+		font-size:45px;
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/*--- Style: 2 ---*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes title_shift2
+{
+	from 
+	{ 
+		color:#dc0c00;
+		font-size:55px;
+		text-shadow:1px 2px 20px #b80a09;
+	}
+	to 	 
+	{ 
+		color:#350f24;
+		font-size:25px; 
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/* Firefox */
+@-moz-keyframes title_shift2
+{
+	from 
+	{ 
+		color:#dc0c00;
+		font-size:55px;
+		text-shadow:1px 2px 20px #b80a09;
+	}
+	to 	 
+	{ 
+		color:#350f24;
+		font-size:25px; 
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/* Standard syntax */
+@keyframes title_shift2
+{
+	from 
+	{ 
+		color:#dc0c00;
+		font-size:55px;
+		text-shadow:1px 2px 20px #b80a09;
+	}
+	to 	 
+	{ 
+		color:#350f24;
+		font-size:25px; 
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/*--- Style: 3 ---*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes title_shift3
+{
+	from 
+	{ 
+		color:#dc0c00;
+		font-size:75px;
+		text-shadow:1px 2px 20px #b80a09;
+	}
+	to 	 
+	{ 
+		color:#123f2f; 
+		font-size:45px;
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/* Firefox */
+@-moz-keyframes title_shift3
+{
+	from 
+	{ 
+		color:#dc0c00;
+		font-size:75px;
+		text-shadow:1px 2px 20px #b80a09;
+	}
+	to 	 
+	{ 
+		color:#123f2f; 
+		font-size:45px;
+		text-shadow:1px 1px 2px #fff;
+	}
+}
+
+/* Standard syntax */
+@keyframes title_shift3
+{
+	from 
+	{ 
+		color:#dc0c00;
+		font-size:75px;
+		text-shadow:1px 2px 20px #b80a09;
+	}
+	to 	 
+	{ 
+		color:#123f2f; 
+		font-size:45px;
+		text-shadow:1px 1px 2px #fff;
+	}
+}

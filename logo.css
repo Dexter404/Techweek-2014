@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body
+{
+	margin:0;
+}*/
+
+img
+{
+	position:relative;
+	top:8px;
+	left:50px;
+	height:100px;
+	width:100px;
+}
+
+#circle
+{
+	position:absolute;
+	top:50px;
+	left:850px;
+	height: 110px;
+	width: 200px;
+	border-color:#F00;
+	background-color: #114368;
+	-webkit-border-top-left-radius:100px; /* Chrome, Safari */
+	   -moz-border-top-left-radius:100px; /* Firefox */
+		 -o-border-top-left-radius:100px; /* Opera */
+			border-top-left-radius:100px; /* Standard syntax */
+	-webkit-border-top-right-radius:100px; /* Chrome, Safari */
+	   -moz-border-top-right-radius:100px; /* Firefox */
+		 -o-border-top-right-radius:100px; /* Opera */
+			border-top-right-radius:100px; /* Standard syntax */
+	-webkit-box-shadow: 0px -20px 100px #333; /* Chrome, Safari */
+	   -moz-box-shadow: 0px -20px 100px #333; /* Firefox */
+		 -o-box-shadow: 0px -20px 100px #333; /* Opera */
+			box-shadow: 0px -20px 100px #333; /* Standard syntax */
+	
+	background: -webkit-radial-gradient(150% 200%, #f2f2f2, #1554ba, #0a2956, #4f4f4f); /* For Safari 5.1 to 6.0 */
+    background: 	 -o-radial-gradient(150% 200%, #f2f2f2, #1554ba, #0a2956, #4f4f4f); /* For Opera 11.1 to 12.0 */
+    background:    -moz-radial-gradient(150% 200%, #f2f2f2, #1554ba, #0a2956, #4f4f4f); /* For Firefox 3.6 to 15 */
+    background:		    radial-gradient(150% 200%, #f2f2f2, #1554ba, #0a2956, #4f4f4f); /* Standard syntax */
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+body
+{
+	margin: 0;
+}
+*/
+
+a.site_links
+{
+	color:inherit;
+	text-decoration:none;
+}
+
+#left_side_tab
+{
+	position:relative;
+	top:100px;
+	left:50px;
+	height:440px;
+	width:125px;
+	color: #FFF;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+}
+
+#ieee_tab
+{
+	position:absolute;
+	top:50px;
+	left:-7px;
+	width: 140px;
+    height: 60px;
+	padding-top:15px;
+    background-color: #00a762;
+	-webkit-border-radius:10px; /* Chrome, Safari */
+	   -moz-border-radius:10px; /* Firefox */
+		 -o-border-radius:10px; /* Opera */
+			border-radius:10px; /* Standard syntax */
+		-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    		transform: rotate(-90deg); /* Standard syntax */
+}
+
+#ieee_tab:hover
+{
+	top: 48px;
+	left: -9px;
+	width: 144px;
+	height: 64px;
+	cursor:pointer;
+	text-shadow:0px 1px 5px #FFFFFF;
+}
+
+#ieee_dtu_tab
+{
+	position:absolute;
+	top:200px;
+	left:-20px;
+	width: 180px;
+    height: 52px;
+	padding-top:10px;
+    background-color: #fab035;
+	-webkit-border-radius:10px; /* Chrome, Safari */
+	   -moz-border-radius:10px; /* Firefox */
+		 -o-border-radius:10px; /* Opera */
+			border-radius:10px; /* Standard syntax */
+		-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    		transform: rotate(-90deg); /* Standard syntax */
+	transition: width 0.1s, height 0.1s;
+}
+
+#ieee_dtu_tab:hover
+{
+	top: 198px;
+	left: -22px;
+	width: 184px;
+	height: 54px;
+	cursor:pointer;
+	text-shadow:0px 1px 5px #FFFFFF;
+}
+
+#dtu_tab
+{
+	position:absolute;
+	top:320px;
+	left:0px;
+	width: 120px;
+    height: 63px;
+	padding-top:20px;
+    background-color: #df4318;
+	-webkit-border-radius:10px; /* Chrome, Safari */
+	   -moz-border-radius:10px; /* Firefox */
+		 -o-border-radius:10px; /* Opera */
+			border-radius:10px; /* Standard syntax */
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+		-ms-transform: rotate(-90deg); /* IE 9 */
+    		transform: rotate(-90deg); /* Standard syntax */
+	-webkit-transition: width 0.1s, height 0.1s; /* Chrome, Safari */
+	   -moz-transition: width 0.1s, height 0.1s; /* Firefox */
+		 -o-transition: width 0.1s, height 0.1s; /* Opera */
+			transition: width 0.1s, height 0.1s; /* Standard syntax */
+}
+
+#dtu_tab:hover
+{
+	top: 322px;
+	left: -2px;
+	width: 124px;
+	height: 67px;
+	cursor:pointer;
+	text-shadow:0px 1px 5px #FFFFFF;
+}

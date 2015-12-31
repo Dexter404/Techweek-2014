@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+html
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+}
+
+#header
+{
+	position:static;
+	width:inherit;
+	height:130px;
+	z-index:1;
+	background-color:rgba(0,0,0,0.05);
+}
+
+#logo
+{
+	width:inherit;
+	height:70px;
+	padding-top:20px;
+	padding-left:30px;
+	background:url('ieee_dtu_horizontal.PNG') no-repeat;
+	background-origin:content-box;
+	background-size:160px 50px;
+}
+
+img
+{
+	position:inherit;
+	margin-left:50px;
+	width: auto; 
+	height: 60px;
+}
+
+#headline
+{
+	position:static;
+	width:inherit;
+	height:auto;
+	background-color:rgba(0,0,0,0.9);
+	color:rgba(255,255,255,1);
+	font-size:16px;
+	font-weight:bold;
+	word-spacing:1px;
+	padding:10px;
+	padding-left:50px;
+}
+
+h1.header1
+{
+	margin-left:850px;
+	margin-top:20px;
+	color:rgba(0,0,0,0.9);
+	font-size:50px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+#form_container
+{
+	position:absolute;
+	width:1000px;
+	height:auto;
+	z-index:-1;
+	background-color:#fff;
+	margin-top:-20px;
+	margin-left:30px;
+	padding:50px 150px;
+	color:#444;
+	/*font-family:"Helvetica Neue","HelveticaNeue",Helvetica,sans-serif;*/
+	line-height: 24px;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 10px 0px 10px, rgba(0,0,0,0.1) -10px 0px 10px; /* Chrome, Safari */
+	   -moz-box-shadow: rgba(0,0,0,0.1) 10px 0px 10px, rgba(0,0,0,0.1) -10px 0px 10px; /* Firefox */
+		 -o-box-shadow: rgba(0,0,0,0.1) 10px 0px 10px, rgba(0,0,0,0.1) -10px 0px 10px; /* Opera */
+			box-shadow: rgba(0,0,0,0.1) 10px 0px 10px, rgba(0,0,0,0.1) -10px 0px 10px; /* Standard syntax */
+}
+
+.questions
+{
+	width:716px;
+	height:auto;
+	background-color:white;
+}
+
+.sat_button
+{
+	position:relative;
+	width:1.5em;
+	height:1.5em;
+	z-index:1;
+}
+
+.button_connector
+{
+	position:absolute;
+	z-index:0;
+	width:716px;
+	height:6px;
+	margin-top:12px;
+	background-color:rgba(0,0,0,.1);
+}
+
+/*** Cell Styling ***/ 
+td.td1
+{
+	width:90px;
+	padding-top:10px;
+	padding-left:50px;
+}
+
+td.td2
+{
+	width:210px;
+	padding-top:10px;
+}
+
+td.td3
+{
+	width:200px;
+	height:25px;
+}
+
+td.td4
+{
+	width:40px;
+	height:25px;
+}
+
+td.td5
+{
+	width:90px;
+}
+
+td.td6
+{
+	width:80px;
+}
+/**********/
+
+/*** Styling of input fields ***/
+input[type=text], [type=email], select
+{
+	width:200px;
+}
+
+input[type=submit]
+{
+	cursor:pointer; 
+	padding:5px 25px; 
+	background:rgba(0,0,0,.9); 
+	border:1px solid rgba(0,0,0,.9);
+	
+	-webkit-border-radius: 10px; /* Chrome, Safari */
+	   -moz-border-radius: 10px; /* Firefox */
+	     -o-border-radius: 10px; /* Opera */
+			border-radius: 10px; /* Standard syntax */
+	color:rgba(255,255,255,1);
+	font-size:1.1em; 
+}
+/**********/

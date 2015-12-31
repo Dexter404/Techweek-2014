@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+html
+{
+	overflow:hidden;
+	height:100%;
+	width:100%;
+	background-color: #000;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	height:inherit;
+	width:inherit;
+	overflow:hidden;
+	background: url(bg/20.jpg) no-repeat;
+	background-size:cover;
+}
+
+#base_div
+{
+	position:relative;
+	top:-340px;
+	left:125px;
+	height:440px;
+	width:1125px;
+	-webkit-box-shadow: 0px 0px 50px #000; /* Chrome, Safari */
+	   -moz-box-shadow: 0px 0px 50px #000; /* Firefox */
+		 -o-box-shadow: 0px 0px 50px #000; /* Opera */
+			box-shadow: 0px 0px 50px #000; /* Standard syntax */
+	background: -webkit-linear-gradient(60deg, #dbdee3, #f3f4f7, #dbdee3); /* For Safari 5.1 to 6.0 */
+    background: 	 -o-linear-gradient(60deg, #dbdee3, #f3f4f7, #dbdee3); /* For Opera 11.1 to 12.0 */
+    background:    -moz-linear-gradient(60deg, #dbdee3, #f3f4f7, #dbdee3); /* For Firefox 3.6 to 15 */
+    background: 		linear-gradient(60deg, #dbdee3, #f3f4f7, #dbdee3); /* Standard syntax */
+}
+
+/*~~~ Header Section ~~~*/
+
+#header_div
+{
+	position:absolute;
+	top:0px;
+	left:10px;
+	height:60px;
+	width:1063px;
+}
+
+#div1
+{
+	height:inherit;
+	width:250px;
+	float:left;
+	border:#dcdfe6 thin ridge;
+	border-left:none;
+	border-top:none;
+}
+
+#div2
+{
+	height:inherit;	
+	width:115px;
+	float:left;
+	border:#dcdfe6 thin ridge;
+	border-top:none;
+}
+
+#div3
+{
+	height:inherit;	
+	width:693px;
+	float:left;
+	border:#dcdfe6 thin ridge;
+	border-right:none;
+	border-top:none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~ Main(central) Section ~~~*/
+
+#main_div
+{
+	height:310px;
+	width:1063px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~ Side Section ~~~*/
+
+#side_div
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:1125px;
+	height:440px;
+	background:url('left_side.PNG') no-repeat left, url('right_side.PNG') no-repeat right;
+}
+
+.side_tab_style
+{
+	padding-top:18px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	   -moz-transform: rotate(-90deg); /* Firefox */
+		-ms-transform: rotate(-90deg); /* IE 9 */
+            transform: rotate(-90deg); /* Standard syntax */
+}
+
+#side_upper_tab1
+{
+	position:absolute;
+	top: 120px;
+	right: -20px;
+	opacity:0.5;
+	width: 90px;
+    height: 32px;
+    background-color: #b8228c;
+    color: #dbdee3;
+}
+
+#side_upper_tab2
+{
+	position:absolute;
+	top:241px;
+	right:-20px;
+	opacity:0.5;
+	width: 90px;
+    height: 32px;
+    background-color: #410cc6;
+    color: #dbdee3;
+}
+
+#side_upper_tab1:hover, #side_upper_tab2:hover
+{
+	opacity:0.8;
+	color:#FFF;
+}
+
+#side_lower_tab1
+{
+	position:absolute;
+	top: 120px;
+	right: -20px;
+	width: 90px;
+    height: 32px;
+    background-color: #b8228c;
+    color: #dbdee3;
+}
+
+#side_lower_tab2
+{
+	position:absolute;
+	top:241px;
+	right:-20px;
+	width: 90px;
+    height: 32px;
+    background-color: #410cc6;
+    color: #dbdee3;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~ Footer Section ~~~*/
+
+#footer_div
+{
+	position:absolute;
+	bottom:-1px;
+	left:10px;
+	height:70px;
+	width:1065px;
+	border-top:#c0c4cd thin ridge;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
